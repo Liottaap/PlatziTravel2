@@ -1,13 +1,110 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btnAccount {
+    background-image: url('./assets/icons/user.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-burger{
+    background-image: url('./assets/icons/burger.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    min-width: 20px;
+    height: 20px;
 }
+
+.chicago{
+  background-image: url('./assets/img/chicago.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  min-width: 100%;
+  height: 200px;
+}
+
+  .hide-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scroll {
+    -ms-overflow-style: none;  /* IE y Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+
+
+  @layer components {
+    .card {
+      @apply w-full md:w-48 h-64 shadow-md rounded-lg ;
+    }
+    .card > div:first-child {
+      @apply w-full h-3/5 rounded-t-lg bg-cover;
+    }
+    .card > div:nth-child(2) {
+      @apply w-full h-2/5 rounded-b-lg;
+    }
+    .card > div:nth-child(2) > p:first-child {
+      @apply font-bold text-lg;
+    }
+    .card > div:nth-child(2) > p:nth-child(2) {
+      @apply text-base;
+    }
+    .cardTitle {
+      @apply text-white text-3xl px-8 pt-8 pb-2 font-semibold;
+    }
+    .cardRecomendado {
+      @apply w-full h-96 bg-cover rounded-xl;
+    }
+  }
+
+
+
+  .bg-LA {
+    background-image: url('./assets/img/LA.jpg');
+  }
+  
+  .bg-bali {
+    background-image: url('./assets/img/bali.jpg');
+  }
+  
+  .bg-chicago {
+    background-image: url('./assets/img/chicago.jpg');
+  }
+  
+  .bg-iceland {
+    background-image: url('./assets/img/iceland.jpg');
+  }
+  
+  .bg-miami {
+    background-image: url('./assets/img/miami.jpg');
+  }
+  
+  .bg-new_york {
+    background-image: url('./assets/img/new_york.jpg');
+  }
+  
+  .bg-norway {
+    background-image: url('./assets/img/norway.jpg');
+  }
+
+
+
+  .card-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .card-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }

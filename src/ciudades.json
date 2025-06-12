@@ -1,0 +1,294 @@
+{
+  "destinos": [
+    {
+      "id": 1,
+      "nombre": "París, Francia",
+      "descripcion": "La capital de Francia, conocida por la Torre Eiffel y su arte.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 2,
+      "nombre": "Japón",
+      "descripcion": "Un país insular en Asia, famoso por su cultura y tecnología avanzada.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 3,
+      "nombre": "Patagonia, Sudamérica",
+      "descripcion": "Una región en Sudamérica conocida por sus paisajes naturales y montañas.",
+      "valor": "Region"
+    },
+    {
+      "id": 4,
+      "nombre": "Nueva York, Estados Unidos",
+      "descripcion": "Una ciudad icónica en Estados Unidos, famosa por Times Square y Central Park.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 5,
+      "nombre": "Italia",
+      "descripcion": "Un país europeo conocido por su historia, arte y gastronomía.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 6,
+      "nombre": "Andalucía, España",
+      "descripcion": "Una región en el sur de España famosa por su arquitectura y flamenco.",
+      "valor": "Region"
+    },
+    {
+      "id": 7,
+      "nombre": "Sídney, Australia",
+      "descripcion": "Una ciudad australiana conocida por su Ópera y playas.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 8,
+      "nombre": "Brasil",
+      "descripcion": "Un país sudamericano famoso por el Carnaval y la selva amazónica.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 9,
+      "nombre": "Escocia, Reino Unido",
+      "descripcion": "Una región en el Reino Unido conocida por sus castillos y paisajes.",
+      "valor": "Region"
+    },
+    {
+      "id": 10,
+      "nombre": "Tokio, Japón",
+      "descripcion": "La capital de Japón, famosa por su tecnología y cultura moderna.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 11,
+      "nombre": "Canadá",
+      "descripcion": "Un país en América del Norte conocido por su naturaleza y multiculturalismo.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 12,
+      "nombre": "Baviera, Alemania",
+      "descripcion": "Una región en Alemania famosa por su cerveza y castillos.",
+      "valor": "Region"
+    },
+    {
+      "id": 13,
+      "nombre": "Buenos Aires, Argentina",
+      "descripcion": "La capital de Argentina, conocida por el tango y su arquitectura.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 14,
+      "nombre": "India",
+      "descripcion": "Un país en Asia conocido por su cultura, historia y gastronomía.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 15,
+      "nombre": "Toscana, Italia",
+      "descripcion": "Una región en Italia famosa por sus paisajes y vinos.",
+      "valor": "Region"
+    },
+    {
+      "id": 16,
+      "nombre": "Londres, Reino Unido",
+      "descripcion": "La capital del Reino Unido, famosa por el Big Ben y el Palacio de Buckingham.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 17,
+      "nombre": "México",
+      "descripcion": "Un país en América del Norte conocido por su cultura y gastronomía.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 18,
+      "nombre": "Provenza, Francia",
+      "descripcion": "Una región en Francia conocida por sus campos de lavanda y paisajes.",
+      "valor": "Region"
+    },
+    {
+      "id": 19,
+      "nombre": "Bangkok, Tailandia",
+      "descripcion": "La capital de Tailandia, famosa por sus templos y vida nocturna.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 20,
+      "nombre": "Sudáfrica",
+      "descripcion": "Un país en África conocido por su biodiversidad y cultura.",
+      "valor": "Internacional"
+    },
+    {
+      "id": 21,
+      "nombre": "San Juan, Argentina",
+      "descripcion": "Una provincia en Argentina conocida por su producción vitivinícola.",
+      "valor": "Nacional"
+    },
+    {
+      "id": 22,
+      "nombre": "Mendoza, Argentina",
+      "descripcion": "Una provincia argentina reconocida por sus viñedos y paisajes montañosos.",
+      "valor": "Nacional"
+    },
+    {
+      "id": 23,
+      "nombre": "Buenos Aires, Argentina",
+      "descripcion": "Una ciudad en Argentina con rica vida cultural, gastronomía y arquitectura.",
+      "valor": "Nacional"
+    },
+    {
+      "id": 24,
+      "nombre": "Santa Fe, Argentina",
+      "descripcion": "Una provincia argentina con historia colonial y paisajes fluviales.",
+      "valor": "Nacional"
+    }
+  ],
+  "alojamientos": [
+    {
+      "id": 1,
+      "nombre": "Hotel Central",
+      "descripcion": "En el corazón de la ciudad.",
+      "imagen": "https://example.com/imagenes/hotel-central.jpg",
+      "precio": 850,
+      "esOferta": true,
+      "destinoId": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Cabaña en el Bosque",
+      "descripcion": "Rodeada de naturaleza.",
+      "imagen": "https://example.com/imagenes/cabana-bosque.jpg",
+      "precio": 600,
+      "esOferta": false,
+      "destinoId": 3
+    },
+    {
+      "id": 3,
+      "nombre": "Apartamento Moderno",
+      "descripcion": "Con vista al río.",
+      "imagen": "https://example.com/imagenes/apto-moderno.jpg",
+      "precio": 750,
+      "esOferta": false,
+      "destinoId": 4
+    },
+    {
+      "id": 4,
+      "nombre": "Eco Lodge",
+      "descripcion": "Ideal para relajarse.",
+      "imagen": "https://example.com/imagenes/eco-lodge.jpg",
+      "precio": 500,
+      "esOferta": true,
+      "destinoId": 6
+    },
+    {
+      "id": 5,
+      "nombre": "Hostel Económico",
+      "descripcion": "Para mochileros.",
+      "imagen": "https://example.com/imagenes/hostel.jpg",
+      "precio": 300,
+      "esOferta": false,
+      "destinoId": 2
+    },
+    {
+      "id": 6,
+      "nombre": "Hotel 5 Estrellas",
+      "descripcion": "Lujo garantizado.",
+      "imagen": "https://example.com/imagenes/hotel-lujo.jpg",
+      "precio": 1200,
+      "esOferta": false,
+      "destinoId": 5
+    },
+    {
+      "id": 7,
+      "nombre": "Cabaña de Montaña",
+      "descripcion": "Paisaje nevado.",
+      "imagen": "https://example.com/imagenes/cabana-montana.jpg",
+      "precio": 900,
+      "esOferta": true,
+      "destinoId": 7
+    },
+    {
+      "id": 8,
+      "nombre": "Casa en la Playa",
+      "descripcion": "Frente al mar.",
+      "imagen": "https://example.com/imagenes/casa-playa.jpg",
+      "precio": 1100,
+      "esOferta": false,
+      "destinoId": 6
+    },
+    {
+      "id": 9,
+      "nombre": "Apartamento Urbano",
+      "descripcion": "Céntrico y moderno.",
+      "imagen": "https://example.com/imagenes/apto-urbano.jpg",
+      "precio": 700,
+      "esOferta": false,
+      "destinoId": 4
+    },
+    {
+      "id": 10,
+      "nombre": "Villa Romántica",
+      "descripcion": "Ideal para parejas.",
+      "imagen": "https://example.com/imagenes/villa-romantica.jpg",
+      "precio": 1300,
+      "esOferta": true,
+      "destinoId": 11
+    },
+    {
+      "id": 11,
+      "nombre": "Cabaña en los Andes",
+      "descripcion": "Perfecta para los amantes del senderismo y la nieve.",
+      "imagen": "https://example.com/imagenes/cabana-andes.jpg",
+      "precio": 580,
+      "esOferta": false,
+      "destinoId": 20
+    },
+    {
+      "id": 12,
+      "nombre": "Casa Colonial Española",
+      "descripcion": "Ubicada en el corazón de Sevilla, ideal para explorar la historia.",
+      "imagen": "https://example.com/imagenes/casa-colonial.jpg",
+      "precio": 620,
+      "esOferta": true,
+      "destinoId": 18
+    },
+    {
+      "id": 13,
+      "nombre": "Hotel Boutique en París",
+      "descripcion": "Pequeño hotel con encanto y vista a la Torre Eiffel.",
+      "imagen": "https://example.com/imagenes/hotel-paris.jpg",
+      "precio": 950,
+      "esOferta": false,
+      "destinoId": 2
+    },
+    {
+      "id": 14,
+      "nombre": "Bungalow Playero",
+      "descripcion": "Situado en la costa caribeña, rodeado de palmeras.",
+      "imagen": "https://example.com/imagenes/bungalow-playa.jpg",
+      "precio": 720,
+      "esOferta": true,
+      "destinoId": 6
+    },
+    {
+      "id": 15,
+      "nombre": "Riad Marroquí",
+      "descripcion": "Alojamiento tradicional en Marrakech con patio interior.",
+      "imagen": "https://example.com/imagenes/riad-marruecos.jpg",
+      "precio": 500,
+      "esOferta": false,
+      "destinoId": 16
+    },
+    {
+      "id": 16,
+      "nombre": "Glamping en el Desierto",
+      "descripcion": "Una experiencia única bajo las estrellas en carpas de lujo.",
+      "imagen": "https://example.com/imagenes/glamping-desierto.jpg",
+      "precio": 670,
+      "esOferta": true,
+      "destinoId": 16
+    }
+  ]
+}
