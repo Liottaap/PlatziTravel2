@@ -1,14 +1,13 @@
 import { Buscador } from "../components/Buscador";
-import { Recomendados } from "../components/Recomendados";
 import { RentaItem } from "../components/RentaItem";
-
+import {MasRentas} from "../components/MasRentas";
 
 function Rentas() {
 
     return(
         <main className="min-h-screen flex flex-col items-center justify-center">
 
-            <Recomendados/>
+            <MasRentas/>
             <RentaItem />
             
         </main>

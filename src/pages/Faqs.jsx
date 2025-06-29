@@ -3,7 +3,7 @@
 function Faqs() {
 
     return(
-        <section >
+        <section className="mb-20" >
             <h1 className='text-3xl text-center font-bold mt-10'>Preguntas Frecuentes</h1>
             <div className='mx-auto mt-10 flex flex-col lg:flex-row justify-center md:gap-10 w-full md:h-[500px] md:flex-wrap'>
                 <div className='md:w-[500px] bg-white p-6 rounded-lg shadow-md mb-4'>

@@ -6,6 +6,10 @@ import { Faqs } from "./pages/Faqs";
 import { Rentas } from "./pages/Rentas";
 import { RentasDetail } from "./components/RentasDetail";
 import { BusquedaProvider } from "./context/BusquedaContext";
+import Politicas from "./pages/Politicas";
+import { Login } from "./pages/login";
+import { Registro } from "./pages/Registro";
+import { MiCuenta } from "./pages/MiCuenta";
 function App(){
     return(
         <div className="bg-mainBg bg-cover bg-center  min-h-screen ">
@@ -18,7 +22,10 @@ function App(){
                             <Route path="/rentas" element={<Rentas/>}/>
                             <Route path="/rentas/:id" element={<RentasDetail/>}/>
                             <Route path="/faqs" element={<Faqs/>}/>
-                            <Route path="/login" element={<h1>Iniciar Sesión</h1>}/>
+                            <Route path="/login" element={<Login/>}/>
+                            <Route path="/politicas" element={<Politicas/>}/>
+                            <Route path="/registro" element={<Registro/>}/>
+                            <Route path='/cuenta' element={<MiCuenta/>}/>
                         </Route>
                     </Routes>
                 </BusquedaProvider>

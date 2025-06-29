@@ -2,17 +2,19 @@ import ig from '../assets/icons/instagram-svgrepo-com.svg'
 import tw from '../assets/icons/twitter-svgrepo-com.svg'
 import ws from '../assets/icons/whatsapp-128-svgrepo-com.svg'
 import '../index.css';
+import { Link } from 'react-router-dom';
 
 function Footer(){
     
     return(
-        <footer className='relative bg-primary text-white flex flex-col mt-20 p-10 gap-10'>
+        <footer className='relative bg-primary text-white flex flex-col p-10 gap-10'>
         <div className='flex flex-col justify-center items-center text-center md:flex-row md:justify-around gap-10'>
           <section>
             <h3 className='text-xl font-semibold'>Sobre Nosotros</h3>
             <ul>
               <li className='text-sm'><a href="/">Inversores</a></li>
-              <li className='text-sm'><a href="">Políticas de Privacidad</a></li>
+
+              <Link to="/politicas" className='text-sm'>Politicas de Privacidad</Link>
               <li className='text-sm'><a href="">Platzi Travel, inc</a></li>
             </ul>
           </section>

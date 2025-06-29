@@ -13,7 +13,7 @@ function FiltroLugares(){
     const ciudadesFiltradas = ciudades.destinos.filter(ciudad =>ciudad.valor.toLowerCase() === filtroActivo);
 
     return(
-        <section className="px-4">
+        <section className="px-4 mb-20">
         <h2 className="text-2xl font-bold mb-4">Lugares para viajar</h2>
   
         <ul className="flex gap-4 mb-6 flex-wrap">

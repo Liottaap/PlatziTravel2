@@ -10,7 +10,7 @@ export const VerMasButton = () => {
 export const ReservaButton = () => {
   
   return(
-    <button className='bg-accent pr-10 pl-10 p-2 rounded-20 font-medium text-xl'>Reservá</button>
 
+    <Link to='/rentas' className='bg-accent pr-10 pl-10 p-2 rounded-20 font-medium text-xl'>Reservá</Link>
   )
 }

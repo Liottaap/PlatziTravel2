@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import '../index.css';
 import { Buscador } from './Buscador';
 import { useLocation } from 'react-router-dom';
+import { AccountButtons } from './AccountButtons';
 
 
 function Header(){
@@ -12,33 +13,35 @@ function Header(){
         {/* logo y botones */}
         <div className='flex justify-between items-center'>
           <Link to='/' className='text-xl lg:text-4xl'>Platzi Travel</Link>
-
-          <div className='flex items-center gap-2  text-sm md:text-xl font-medium'>
-            <button className='bg-accent p-1 rounded-10 hidden md:flex text-sm p-2'>Iniciar Sesión</button>
-            <button className='hidden md:flex text-sm p-2'>Registrarse</button>
-            <button className='btnAccount md:ml-10 bg-white rounded-full p-2'></button>
-          </div>
+          <AccountButtons />
         </div>
         
         {/* Menu hamburguesa y nav */}
-        <nav className='flex justify-between lg:justify-center'>
-          <button className='btn-burger lg:hidden'></button>
-          {/* Menu hamburguesa */}
-          <div className='hidden'>
-              <a href='/'>Inicio</a>
-              <a href='/'>Rentas</a>
-              <a href='/'>Divisas</a>
-              <a href='/'>Faqs</a>
-            </div>
-            
-            <div className='flex gap-12 text-xl hidden md:flex'>
-              <Link to='/'>Inicio</Link>
-              <Link to='/rentas'>Rentas</Link>
-              <Link to='/divisas'>Divisas</Link>
+        <nav className="relative flex justify-center items-center text-white lg:static lg:flex lg:justify-center lg:text-white">
+        {/* Input oculto para controlar visibilidad */}
+          <input type="checkbox" id="menu-toggle" className="hidden peer" />
+          {/* Botón hamburguesa que abre el menú */}
+          <label
+            htmlFor="menu-toggle"
+            className="btn-burger lg:hidden fixed top-30 left-4 z-50 cursor-pointer text-white text-3xl peer-checked:hidden">
+          </label>
 
-              <Link to='/faqs'>Preguntas Frecuentes</Link>
+          {/* Menú hamburguesa (visible solo si el input está checked) */}
+          <div className="nav peer-checked:opacity-100 peer-checked:visible lg:visible lg:opacity-100">
+            {/* Botón para cerrar el menú (otro label que desmarca el checkbox) */}
+            <label
+              htmlFor="menu-toggle"
+              className="close-btn lg:hidden absolute top-4 right-4 text-white text-2xl cursor-pointer">✕
+            </label>
 
+            {/* Lista de enlaces */}
+            <div className="navlist">
+              <Link to="/">Inicio</Link>
+              <Link to="/rentas">Rentas</Link>
+              <Link to="/divisas">Divisas</Link>
+              <Link to="/faqs">Faqs</Link>
             </div>
+          </div>
         </nav>
 
         {!isHome && (

@@ -34,7 +34,7 @@ function Main() {
   //   );
   // }
   return (
-    <main className='flex flex-col md:mr-10 md:ml-10'>
+    <main className='flex flex-col'>
       {/* SECCION BANNER */}
       <BannerHome/>
 

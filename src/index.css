@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.btnAccount, .btn-burger, .bglogin, .btn-google, .btn-facebook {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .btnAccount {
     background-image: url('./assets/icons/user.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+
     cursor: pointer;
     width: 35px;
     height: 35px;
@@ -15,9 +18,6 @@
 
 .btn-burger{
     background-image: url('./assets/icons/burger.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     cursor: pointer;
     min-width: 20px;
     height: 20px;
@@ -107,4 +107,121 @@
   .card-visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  .bglogin{
+    background-image: url('./assets/img/banner-login-2.png');
+
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    z-index: 40;
+  }
+  
+  .peer:checked ~ .nav {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Botón hamburguesa */
+  .btn-burger {
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem;
+    z-index: 50;
+  }
+  
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
+    background-color: #86b6dee6;
+    padding: 2rem 1.5rem;
+    z-index: 40;
+  }
+  
+  /* Al activarse (input:checked), el menú se muestra */
+  .peer:checked ~ .nav {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Botón hamburguesa */
+  .btn-burger {
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem;
+    z-index: 50;
+  }
+  
+  /* Botón de cerrar */
+  .close-btn {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  /* Lista de navegación en vertical */
+  .navlist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    color: white;
+    font-size: 1.25rem;
+  }
+  
+  /* Estilos para pantallas grandes (desktop) */
+  @media (min-width: 1024px) {
+    .nav {
+      opacity: 1 !important;
+      visibility: visible !important;
+      position: static;
+      flex-direction: row;
+      background-color: transparent;
+      height: auto;
+      width: auto;
+      padding: 0;
+    }
+  
+    .navlist {
+      flex-direction: row;
+      align-items: center;
+      gap: 3rem;
+      color: white;
+    }
+  
+    .btn-burger,
+    .close-btn {
+      display: none;
+    }
+  }
+
+  .btn-google{
+    background-image: url('./assets/icons/google.svg');
+
+  }
+
+  .btn-facebook{
+    background-image: url('./assets/icons/facebook.svg');
   }
