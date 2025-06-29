@@ -225,3 +225,15 @@
   .btn-facebook{
     background-image: url('./assets/icons/facebook.svg');
   }
+
+
+  .scroll-personalizado::-webkit-scrollbar {
+    height: 8px;
+  }
+  .scroll-personalizado::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  .scroll-personalizado::-webkit-scrollbar-track {
+    background-color: #eee;
+  }

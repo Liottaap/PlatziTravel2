@@ -10,7 +10,6 @@ function MasRentas() {
       e.preventDefault();
       container.scrollLeft += e.deltaY;
     };
-
     container.addEventListener('wheel', handleWheel, { passive: false });
     return () => container.removeEventListener('wheel', handleWheel);
   }, []);
@@ -18,16 +17,18 @@ function MasRentas() {
   return (
     <section
       ref={scrollRef}
-      className="w-full overflow-x-auto px-4 py-6"
+      className="w-full overflow-x-auto px-4 py-6 scroll-personalizado"
     >
-      <div className="grid grid-rows-2 auto-cols-max auto-flow-col gap-4 w-max">
+      <div
+        className="grid grid-flow-col auto-cols-max grid-rows-2 gap-4"
+      >
         {datos.destinos.map((destino, index) => (
           <article
             key={index}
-            className="w-64 h-40 bg-primary rounded border shadow-md p-4 flex flex-col justify-between shrink-0"
+            className="w-64 h-40 bg-primary text-white rounded shadow-md p-4 flex flex-col justify-between"
           >
             <h3 className="font-bold text-sm truncate">{destino.nombre}</h3>
-            <p className="text-xs text-gray-700 line-clamp-3">{destino.descripcion}</p>
+            <p className="text-xs line-clamp-3">{destino.descripcion}</p>
           </article>
         ))}
       </div>
