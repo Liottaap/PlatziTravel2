@@ -8,7 +8,7 @@ function Recomendados(){
         <h2 className='text-2xl font-bold mb-4'>Recomendados</h2>
   
         <ul className='flex justify-start gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory hide-scroll touch-pan-x'>      
-          {[1, 2, 3, 4, 5].map((_, i) => (
+          {[1, 2, 3, 4, 5, 6].map((_, i) => (
           <li key={i} className='group overflow-hidden cursor-pointer bg-primary min-w-[180px] h-[250px] text-center text-white rounded-10 snap-start shrink-0 flex flex-col justify-between'>
             <img
               src={Noruega}
