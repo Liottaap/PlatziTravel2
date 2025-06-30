@@ -8,31 +8,12 @@ import { Destacados } from '../components/Destacados';
 import { BeneficiosBanner } from '../components/BeneficiosBanner';
 import { VerMasButton } from '../components/Buttons';
 import { FiltroLugares } from '../components/FiltroLugares';
-import { Faqs } from './Faqs';
-import React, { useEffect, useState } from 'react';
-import { BusquedaResultados } from '../components/BusquedaResultados';
+// import { Faqs } from './Faqs';
+
+// import { BusquedaResultados } from '../components/BusquedaResultados';
 
 function Main() {  
-  const [cargando, setCargando] = useState(true);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setCargando(false);
-  //   }, 500);
-
-  //   return () => clearTimeout(timer);
-
-    
-  // }, []);
-
-  
-  // if (cargando) {
-  //   return (
-  //     <div className="flex justify-center items-center h-screen">
-
-  //     </div>
-  //   );
-  // }
   return (
     <main className='flex flex-col'>
       {/* SECCION BANNER */}

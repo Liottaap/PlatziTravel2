@@ -10,6 +10,8 @@ import Politicas from "./pages/Politicas";
 import { Login } from "./pages/login";
 import { Registro } from "./pages/Registro";
 import { MiCuenta } from "./pages/MiCuenta";
+import {Divisas} from "./pages/Divisas";
+
 function App(){
     return(
         <div className="bg-mainBg bg-cover bg-center  min-h-screen ">
@@ -18,7 +20,6 @@ function App(){
                     <Routes>
                         <Route path="/" element={<Layout/>}>
                             <Route index element={<Main/>}/>
-                            <Route path="/divisas" element={<h1>Divisas</h1>}/>
                             <Route path="/rentas" element={<Rentas/>}/>
                             <Route path="/rentas/:id" element={<RentasDetail/>}/>
                             <Route path="/faqs" element={<Faqs/>}/>
@@ -26,6 +27,7 @@ function App(){
                             <Route path="/politicas" element={<Politicas/>}/>
                             <Route path="/registro" element={<Registro/>}/>
                             <Route path='/cuenta' element={<MiCuenta/>}/>
+                            <Route path='/divisas' element={<Divisas/>}/> 
                         </Route>
                     </Routes>
                 </BusquedaProvider>

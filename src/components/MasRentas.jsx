@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import datos from '../ciudades.json';
-
+import norway from '../assets/img/switzerland.jpg'
 function MasRentas() {
   const scrollRef = useRef(null);
 
@@ -25,10 +25,15 @@ function MasRentas() {
         {datos.destinos.map((destino, index) => (
           <article
             key={index}
-            className="w-64 h-40 bg-primary text-white rounded shadow-md p-4 flex flex-col justify-between"
+            className="cursor-pointer flex flex-row w-64 h-40 bg-primary text-white rounded shadow-md gap-2"
           >
-            <h3 className="font-bold text-sm truncate">{destino.nombre}</h3>
-            <p className="text-xs line-clamp-3">{destino.descripcion}</p>
+            <div className='w-1/2 object-cover'>
+              <img src={norway} alt="" className='h-full'/>
+            </div>
+            <div className='w-1/2 text-center flex flex-col p-4'>
+              <h3 className="font-bold text-sm truncate">{destino.nombre}</h3>
+              <p className="text-xs line-clamp-3">{destino.descripcion}</p>
+            </div>
           </article>
         ))}
       </div>

@@ -3,6 +3,7 @@ import '../index.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 function AccountButtons() {
@@ -41,7 +42,7 @@ function AccountButtons() {
       )}
       {user && (
         <button
-        className="btnAccount bg-white rounded-full p-2 ml-10 cursor-pointer"
+        className="bi bi-person-fill text-2xl"
         onClick={() => setOpenMenu(prev => !prev)}>
         </button>
       )}
